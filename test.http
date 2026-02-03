@@ -1,0 +1,33 @@
+POST http://localhost:3000/
+Content-Type: application/json
+
+
+###
+GET http://localhost:3000/
+Content-Type: application/json
+
+###
+GET http://localhost:3000/api/v1/tours
+Content-Type: application/json
+
+###
+POST http://localhost:3000/api/v1/tours
+Content-Type: application/json
+
+{
+  "name": "The Forest Hiker",
+  "duration": 5,
+  "difficulty": "easy"
+}
+
+###
+GET http://localhost:3000/api/v1/tours/10
+Content-Type: application/json
+
+###
+PATCH http://localhost:3000/api/v1/tours/9
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/api/v1/tours/9
+Content-Type: application/json
